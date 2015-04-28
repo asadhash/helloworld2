@@ -6,9 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Starship NBUG</title>
         <meta name="description" content="Managing New builds and upgrade projects at LGI">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main.css" rel="stylesheet" type="text/css">
+        <script src="outline.js"></script>
     </head>
-    <body>
+    <body onLoad="outlineInit()">
 
         <h1>Enter tracking data</h1>
         <h2>Dont be shy!</h2>
@@ -18,62 +19,45 @@
         -->
         
         <p>
-            Using this <u><em>easy to use</em></u> tool to track project status across Liberty, you and the rest of your team can accurately and easily let the rest of us know how things are with you.
+            Pick a country first, and a list of projects arranged by year will appear
         </p>
         
         <!--
-            WHAT IS BRACKETS?
+            Choose a country and show list of projects
         -->
-        <form> Country:    <input type="range" name="country" value="PL,DE§"><br>
-               ProjectID: <input type="text" name="projectid" value="PL15_NW01_01"><br>
-               <input type="submit" value="Engage">
+        <form>
+            <table>
+            <td>Country code:</td>
+             <td><input type="text" name="country" value="PL"> </td>
+             <td><input type="submit" value="Look up"></td>
+             <td><i>  (for e.g. for Germany it's DE, for Poland it's PL)</i></td>
+            </table>
         </form>
+        
         <table>
-  <tr>
-    <th width=100 text-align=left>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <td>January</td>
-    <td>$100</td>
-  </tr>
-  <tr>
-    <td>February</td>
-    <td>$80</td>
-  </tr>
-</table>
-        <ul>
-            <li><a href="http://lginbugapp.azurewebsites.net">Brackets.io</a></li>
-            <li><a href="http://blog.brackets.io">Brackets Team Blog</a></li>
-            <li><a href="http://github.com/adobe/brackets">Brackets on GitHub</a></li>
-            <li><a href="https://brackets-registry.aboutweb.com">Brackets Extension Registry</a></li>
-            <li><a href="http://github.com/adobe/brackets/wiki">Brackets Wiki</a></li>
-            <li><a href="http://groups.google.com/group/brackets-dev">Brackets Developer Mailing List</a></li>
-            <li><a href="https://twitter.com/#!/brackets">@brackets on Twitter</a></li>
-            <li>Chat with Brackets developers on IRC in #brackets on Freenode</li>
-        </ul>
+            <tr><td>2015</td></tr>
+            <tr><th>ProjectID</th><th>Description</th></tr>
+            <tr><td>IE_NW01_16</td><td>Nearnet dublin</td>
+            <tr><td>2016</td></tr>
+            <tr><td>2017</td></tr>
+        </table>
+<ul class ="outline">
+  <li>Flavors
+    <ul>
+      <li>Strawberry</li>
+      <li>Chocolate</li>
+      <li>Coffee</li>
+    </ul>
+  </li>
+  <li>Locations
+    <ul>
+      <li>Beach</li>
+      <li>Main Street</li>
+      <li>Airport</li>
+    </ul>
+  </li>
+</ul>
+
 
     </body>
 </html>
-<!--
-
-    [[[[[[[[[[[[[[[     ]]]]]]]]]]]]]]]
-    [::::::::::::::     ::::::::::::::]
-    [::::::::::::::     ::::::::::::::]
-    [::::::[[[[[[[:     :]]]]]]]::::::]
-    [:::::[                     ]:::::]
-    [:::::[                     ]:::::]
-    [:::::[                     ]:::::]
-    [:::::[                     ]:::::]
-    [:::::[    CODE THE WEB     ]:::::]
-    [:::::[  http://brackets.io ]:::::]
-    [:::::[                     ]:::::]
-    [:::::[                     ]:::::]
-    [:::::[                     ]:::::]
-    [:::::[                     ]:::::]
-    [::::::[[[[[[[:     :]]]]]]]::::::]
-    [::::::::::::::     ::::::::::::::]
-    [::::::::::::::     ::::::::::::::]
-    [[[[[[[[[[[[[[[     ]]]]]]]]]]]]]]]
-
--->
