@@ -9,13 +9,10 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <script type="text/javascript">
-        document.getElementById('form_id').action = "script.php";
-        </script> 
         
         <h1>Pick the country below</h1>
-        <form name=myform id=form_id>
-        <select name=rdio_ctry onchange="this.form.submit()" >
+        <form name=myform id='1'>
+        <select name=rdio_ctry >
             <option value="PL">   PL</option><br>
             <option value="HU">   HU</option><br>
             <option value="CZ">   CZ</option><br>
@@ -29,11 +26,13 @@
             <option value="BE">   BE</option>
         </select><p>
         
-        <input type="button" value="Get Cases"></input>
+        <input type="submit" value="Get Cases"></input>
         
 
         </form>
-        
+        <script type="text/javascript">
+        document.getElementById('1').action = "scripts/hello.php";
+        </script> 
     </body>
 </html>
 <!--
